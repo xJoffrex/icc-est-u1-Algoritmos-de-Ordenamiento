@@ -13,11 +13,16 @@ class GraficaOrdenamiento:
 
     def mostrar_grafica(self):
         plt.figure(figsize=(10, 6))
-        
+
         estilos = ['-', '--', '-.', ':', '-.']
         colores = ['blue', 'green', 'red', 'purple', 'orange']
+    
+        nombres_metodos = list(self.tiempos_by_metodo.keys())
+        tiempos_metodos = list(self.tiempos_by_metodo.values())
 
-        for i, (nombre, tiempos) in enumerate(self.tiempos_by_metodo.items()):
+        for i in range(len(nombres_metodos)):
+            nombre = nombres_metodos[i]
+            tiempos = tiempos_metodos[i]
             plt.plot(self.tamanios, tiempos, label=nombre, marker="o", color=colores[i], linestyle=estilos[i])
 
         plt.title("Comparación de tiempo para cada método de ordenamiento")

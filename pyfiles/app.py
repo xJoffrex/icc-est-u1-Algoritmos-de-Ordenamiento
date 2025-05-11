@@ -8,6 +8,8 @@ if __name__ == "__main__":
     print("Funciona")
     bench = bm.Benchmarking()
     metodosO = MetodosOrdenamiento()
+    grafica = gfc.GraficaOrdenamiento() ## Muestra directamente la imagen con los valores que ya listamos anteriormente
+    grafica.mostrar_grafica()
     
     
     tamanios = [5000, 10000, 30000,50000,100000]
@@ -49,5 +51,3 @@ if __name__ == "__main__":
     for tam, nombre, tiempo in resultados:
         tiempos_by_metodo[nombre].append(tiempo)
         
-    grafica = gfc.GraficaOrdenamiento() ## Muestra directamente la imagen con los valores que ya listamos anteriormente
-    grafica.mostrar_grafica()
