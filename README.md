@@ -1,6 +1,6 @@
 
 # icc-est-u1-Algoritmos-de-Ordenamiento
-=======
+=======================================
 # Algoritmos de Ordenamiento
 
 ## Descripción
@@ -57,8 +57,10 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
 3. Instala `matplotlib` si no lo tienes:
 
 
+
 ```bash
 pip install matplotlib
+```
 
 ## Contribuir
 
@@ -67,7 +69,7 @@ Para contribuir a este proyecto, por favor crea un fork y envía un pull request
 
 ## EJEMPLO DE ADICIÓN DE DATOS EN ESTE INFORME
 
-!["Comparacion grafica de los metodos de ordenamiento"](comparacion.jpg)
+!["Comparacion grafica de los metodos de ordenamiento"](./comparacion.jpg)
 
 ## Autores
 
@@ -79,5 +81,5 @@ Para contribuir a este proyecto, por favor crea un fork y envía un pull request
 - Al finalizar el proyecto, entendi con mayor claridad que los algoritmos como Burbuja, Burbuja Mejorado, Selección e Inserción tienen un rendimiento menor con grandes volúmenes de datos, ya que su complejidad es 𝑂(𝑛2)O(n 2), lo que quiere decir es que su tiempo de ejecución aumenta rápidamente al crecer el tamaño del arreglo, en cambio el algoritmo Shell Sort es el más eficiente de estos métodos, con una complejidad que, en la práctica, es mejor que 𝑂(𝑛2)O(n 2), lo que lo hace más apto para conjuntos de datos más grandes, como el que ocupamos en el proyecto. 
 
 * Steve Brito:
-- Shell Sort presentó un comportamiento más eficiente, con una complejidad que, aunque no tiene un límite exacto definido en notación Big-O, en la práctica es mejor que   𝑂(𝑛2), Su rendimiento mejorado se debe a la disminución en la cantidad de comparaciones e intercambios necesarios durante la ordenación. Para conjuntos de datos grandes se recomienda evitar los algoritmos de ordenamiento de complejidad 𝑂(𝑛2) como Burbuja y Selección, optando por opciones más óptimas como Shell Sort
+- Shell Sort presentó un comportamiento más eficiente, con una complejidad que, aunque no tiene un límite exacto definido en notación Big-O, en la práctica es mejor que 𝑂(𝑛2), Su rendimiento mejorado se debe a la disminución en la cantidad de comparaciones e intercambios necesarios durante la ordenación. Para conjuntos de datos grandes recomiendo no usar los algoritmos de ordenamiento de complejidad 𝑂(𝑛2) como Burbuja y Selección y optar por opciones más óptimas como Shell Sort
 
